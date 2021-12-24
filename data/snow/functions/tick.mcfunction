@@ -26,6 +26,7 @@ execute as @a[tag=!hassnow, scores={nosnow=0}] at @s positioned ~2 ~1 ~0 if bloc
 execute as @a[tag=!hassnow, scores={nosnow=0}] at @s positioned ~2 ~1 ~1 if blocks ~ ~ ~ ~ ~128 ~ ~ ~3 ~ masked run tag @s add hassnow
 execute as @a[tag=!hassnow, scores={nosnow=0}] at @s positioned ~2 ~1 ~2 if blocks ~ ~ ~ ~ ~128 ~ ~ ~3 ~ masked run tag @s add hassnow
 
+tag @a[tag=hassnow,nbt=!{Dimension:"minecraft:overworld"}] remove hassnow
 
 execute as @a[tag=hassnow] at @s run function snow:snowfall
 
